@@ -14,38 +14,8 @@ import java.util.Optional;
  */
 public enum Library {
 
-    AUTORANK("Autorank", AutorankHook.class, "Staartvin"),
-    MCMMO("mcMMO", McMMOHook.class, "t00thpick1"),
-    FACTIONS("Factions", FactionsHook.class, "Cayorion", "com.massivecraft.factions.Factions"),
-    ONTIME("OnTime", OnTimeHook.class, "Edge209"),
-    AFKTERMINATOR("afkTerminator", AFKTerminatorHook.class, "Edge209"),
-    ROYALCOMMANDS("RoyalCommands", RoyalCommandsHook.class, "WizardCM"),
-    ULTIMATECORE("UltimateCore", UltimateCoreHook.class, "Bammerbom"),
     STATZ("Statz", StatzHook.class, "Staartvin"),
-    ACIDISLAND("AcidIsland", AcidIslandHook.class, "tastybento"),
-    ADVANCEDACHIEVEMENTS("AdvancedAchievements", AdvancedAchievementsHook.class, "DarkPyves"),
-    ASKYBLOCK("ASkyBlock", ASkyBlockHook.class, "tastybento"),
-    BATTLELEVELS("BattleLevels", BattleLevelsHook.class, "RobiRami"),
-    GRIEFPREVENTION("GriefPrevention", GriefPreventionHook.class, "RoboMWM"),
-    JOBS("Jobs", JobsHook.class, "Zrips"),
-    RPGME("RPGme", RPGmeHook.class, "Flamedek"),
-    USKYBLOCK("uSkyBlock", uSkyBlockHook.class, "R4zorax"),
-    VAULT("Vault", VaultHook.class, "Kainzo"),
-    WORLDGUARD("WorldGuard", WorldGuardHook.class, "sk89q"),
-    ESSENTIALSX("Essentials", "EssentialsX", EssentialsXHook.class, "drtshock"),
-    QUESTS("Quests", QuestsHook.class, "PikaMug", "me.blackvein.quests.Quests"),
-    STATS("Stats", StatsHook.class, "Lolmewn"),
-    QUESTS_ALTERNATIVE("Quests", QuestsAlternative.class, "LMBishop", "com.leonardobishop.quests.Quests"),
-    SAVAGE_FACTIONS("Factions", "SavageFactions", SavageFactionsHook.class, "ProSavage", "com.massivecraft.factions" +
-            ".SavageFactions"),
-    PLAYERPOINTS("PlayerPoints", PlayerPointsHook.class, "Blackixx"),
-    NUVOTIFIER("Votifier", "NuVotifier", NuVotifierHook.class, "Ichbinjoe", "com.vexsoftware.votifier" +
-            ".NuVotifierBukkit"),
-    CMI("CMI", CMIHook.class, "Zrips"),
-    UHCSTATS("UhcStats", UHCStatsHook.class, "Mezy"),
-    TOWNY_ADVANCED("Towny", TownyAdvancedHook.class, "Shade"),
-    MCRPG("McRPG", McRPGHook.class, "Eunoians"),
-    AURELIUM_SKILLS("AureliumSkills", AureliumSkillsHook.class, "Archyx");
+    VAULT("Vault", VaultHook.class, "Kainzo");
 
     private final String internalPluginName;
     private final String authorName;
@@ -156,8 +126,5 @@ public enum Library {
      *
      * @return true if the plugin is enabled, false otherwise.
      */
-    public boolean isPluginInstalled() {
-        return Bukkit.getPluginManager().isPluginEnabled(Library.MCRPG.getInternalPluginName());
-    }
 
 }
